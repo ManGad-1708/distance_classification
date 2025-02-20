@@ -18,5 +18,8 @@ jobs:
         run: |
           pip install numpy pandas scikit-learn
 
+      - name: Verify Files and Images
+        run: python verify_files.py
+
       - name: Run test script
         run: python test_script.py
